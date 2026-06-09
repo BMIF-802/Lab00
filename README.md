@@ -108,21 +108,9 @@ conda --version
 
 You should see a conda version number.
 
-If the command is not recognized, close and reopen VS Code. On Windows, you can also open **Anaconda Prompt** from the Start menu and enter:
-
-```bash
-conda init powershell
-```
-
-Then close the prompt and reopen VS Code.
-
 ---
 
-# In-class tutorial
-
-The activities below are designed to take approximately 50 minutes when the required software is already installed.
-
-## Part 1: Understand the tools — approximately 5 minutes
+## Tool Descriptions
 
 | Tool | Purpose |
 |---|---|
@@ -157,7 +145,7 @@ Your copy on GitHub
 Your copy on your computer
 ```
 
-## Part 2: Install useful VS Code extensions — approximately 5 minutes
+## Part 2: Install useful VS Code extensions
 
 Select the **Extensions** icon on the left side of VS Code. It looks like four blocks.
 
@@ -167,13 +155,10 @@ Search for and install:
 |---|---|---|
 | **Python** | Microsoft | Runs Python and helps select Python environments. |
 | **Jupyter** | Microsoft | Opens and runs Jupyter notebooks. |
-| **GitHub Pull Requests** | GitHub | Adds GitHub sign-in and pull-request tools to VS Code. |
 
 VS Code already includes basic Git support, so no additional Git extension is required.
 
-The GitHub Pull Requests extension is useful, but the pull request in this tutorial will be created on the GitHub website.
-
-## Part 3: Create a conda environment — approximately 8 minutes
+## Part 3: Create a conda environment
 
 We will create an environment named `bmif802`.
 
@@ -213,7 +198,7 @@ You will normally activate the environment whenever you work on BMIF 802 materia
 conda activate bmif802
 ```
 
-## Part 4: Open a blank Jupyter notebook — approximately 5 minutes
+## Part 4: Open a blank Jupyter notebook
 
 This short activity checks that VS Code can use the new environment.
 
@@ -238,7 +223,7 @@ A **cell** is one section of a notebook. A **kernel** is the Python process that
 
 Close the notebook when finished. You do not need to save it.
 
-## Part 5: Fork the course repository — approximately 4 minutes
+## Part 5: Fork the course repository
 
 A fork is your own GitHub copy of this repository.
 
@@ -250,9 +235,7 @@ A fork is your own GitHub copy of this repository.
 
 GitHub will open your fork when it is ready.
 
-Do not download the repository as a ZIP file. A ZIP file does not include the Git workflow used in this tutorial.
-
-## Part 6: Clone your fork using VS Code — approximately 5 minutes
+## Part 6: Clone your fork using VS Code
 
 Cloning creates a copy of your fork on your computer.
 
@@ -274,7 +257,7 @@ Cloning creates a copy of your fork on your computer.
 
 A folder such as `Documents/BMIF802` is a suitable location. Avoid placing the repository in OneDrive or iCloud when possible.
 
-## Part 7: Create a branch — approximately 3 minutes
+## Part 7: Create a branch
 
 A branch lets you make a change separately from the repository's main branch.
 
@@ -290,12 +273,12 @@ A branch lets you make a change separately from the repository's main branch.
 For example:
 
 ```text
-introduction-alexsmith
+introduction-ronny
 ```
 
 Confirm that the new branch name appears in the lower-left corner.
 
-## Part 8: Create `me.txt` — approximately 4 minutes
+## Part 8: Create `me.txt`
 
 1. In the VS Code Explorer, select the **New File** button.
 2. Name the file:
@@ -315,19 +298,21 @@ Confirm that the new branch name appears in the lower-left corner.
 For example:
 
 ```text
-Name: Alex
-Preferred pronouns: they/them
-Favorite midnight snack: Popcorn
+Name: Ronny
+Preferred pronouns: he/him
+Favorite midnight snack: icecream
 ```
 
-You may write `prefer not to say` for any item you do not want to post publicly.
+You may leave blank any item you do not want to post publicly.
 
 Save the file:
 
 - Windows/Linux: `Ctrl + S`
 - macOS: `Command + S`
 
-## Part 9: Commit and push using VS Code — approximately 6 minutes
+You can also turn on autosave under the `File` menu.
+
+## Part 9: Commit and push using VS Code
 
 ### Review the change
 
@@ -364,15 +349,13 @@ git config --global user.email "your-email@example.com"
 
 Replace the example values with your information, and then try committing again.
 
-You can use the GitHub no-reply email listed in your GitHub email settings if you do not want your personal email stored in public commit information.
-
 ### Push the branch
 
 Select **Publish Branch** or **Sync Changes** in VS Code.
 
 Sign in to GitHub if prompted. Pushing uploads your commit from your computer to your fork on GitHub.
 
-## Part 10: Create a pull request — approximately 5 minutes
+## Part 10: Create a pull request
 
 1. Open your fork on GitHub.
 2. GitHub may show a banner for your recently pushed branch. Select **Compare & pull request**.
@@ -388,28 +371,10 @@ Sign in to GitHub if prompted. Pushing uploads your commit from your computer to
    Tutorial 1 introduction: YOUR-GITHUB-USERNAME
    ```
 
-5. In the description, enter:
-
-   ```text
-   One tool that was new to me:
-   One question I still have:
-   ```
-
 6. Leave **Allow edits by maintainers** enabled.
 7. Select **Create pull request**.
 
 Do not merge the pull request yourself.
-
-## Final instructor-led activity — approximately 5 minutes
-
-Stop here and wait for the instructor.
-
-Keep the following open:
-
-- your pull request in a web browser; and
-- the cloned repository in VS Code.
-
-The instructor will provide the final steps.
 
 ---
 
@@ -452,25 +417,8 @@ Then close the prompt and reopen VS Code.
 
 Return to GitHub, open your fork, copy its HTTPS address, and clone it into a new local folder.
 
-### I committed on `main`
-
-Stop before making another commit and ask the instructor for help. Your work is not lost.
-
 ### Push repeatedly asks me to sign in
 
 Select the Accounts icon in the lower-left corner of VS Code, sign out of GitHub, and sign in again. Complete the authorization steps in your browser.
 
 ---
-
-## Completion checklist
-
-- [ ] Git, VS Code, and Miniconda are installed.
-- [ ] The Python, Jupyter, and GitHub Pull Requests extensions are installed.
-- [ ] The `bmif802` conda environment was created.
-- [ ] A blank notebook ran using the `bmif802` kernel.
-- [ ] The course repository was forked.
-- [ ] The fork was cloned.
-- [ ] An introduction branch was created.
-- [ ] `me.txt` was committed and pushed.
-- [ ] A pull request was opened.
-- [ ] The final instructor-led activity was completed.
